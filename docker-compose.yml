@@ -1,0 +1,8 @@
+version: '2'
+services:
+  opencv:
+    build:
+      context: .
+    image: r.haps.pw/opencv
+    container_name:
+      opencv
