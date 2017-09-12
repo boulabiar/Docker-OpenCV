@@ -17,13 +17,13 @@ RUN apt-get update \
 RUN pip3 install pytesseract
 
 RUN cd \
-	&& wget https://github.com/opencv/opencv/archive/3.1.0.zip \
-	&& unzip 3.1.0.zip \
-	&& cd opencv-3.1.0 \
+	&& wget https://github.com/opencv/opencv/archive/3.3.0.zip \
+	&& unzip opencv-3.3.0.zip \
+	&& cd opencv-3.3.0 \
 	&& mkdir build \
 	&& cd build \
 	&& cmake .. \
 	&& make -j3 \
 	&& make install \
 	&& cd \
-	&& rm 3.1.0.zip
+	&& rm 3.3.0.zip
