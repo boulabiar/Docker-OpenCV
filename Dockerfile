@@ -18,7 +18,7 @@ RUN pip3 install pytesseract
 
 RUN cd \
 	&& wget https://github.com/opencv/opencv/archive/3.3.0.zip \
-	&& unzip opencv-3.3.0.zip \
+	&& unzip 3.3.0.zip \
 	&& cd opencv-3.3.0 \
 	&& mkdir build \
 	&& cd build \
